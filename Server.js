@@ -15,7 +15,7 @@ app.use("/images" , express.static(path.join(__dirname , "public/uploads" )))
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://subhajitcurd.netlify.app',
   credentials: true
 }));
 
